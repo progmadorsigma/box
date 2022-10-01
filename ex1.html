@@ -21,13 +21,15 @@
     </style>
 </head>
 <body>
-    <h1>Ola, mundo!</h1>
+    <h1>Ola, <span id = "nome"></span> !</h1>
     <p>O começo de uma carreira,primeiro projeto em html</p>
     <script>
     //primeiras interações em JSS
     window.alert (`minha primeira mensagem`)
     window.confirm(`esta gostando de javascript?`)
-    window.prompt(`qual seu nome?`)
+    const nome = window.prompt(`qual seu nome?`)
+    const span_nome = document.getElementById("nome")
+    span_nome.innerHTML=nome
     </script>
 </body>
 </html>
